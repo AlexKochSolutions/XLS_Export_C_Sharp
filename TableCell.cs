@@ -1,3 +1,4 @@
+﻿
 namespace XLS_Export_C_Sharp
 {
     internal class TableCell

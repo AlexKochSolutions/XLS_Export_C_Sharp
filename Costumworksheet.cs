@@ -1,4 +1,4 @@
-using NPOI.SS.UserModel;
+﻿using NPOI.SS.UserModel;
 
 namespace XLS_Export_C_Sharp
 {
@@ -6,18 +6,20 @@ namespace XLS_Export_C_Sharp
     {
         internal string Name { get; set; }
         //internal List<TableCell> Cells { get; set; }
+        // key value $"{cell.row},{cell.col}"
         internal SortedDictionary<string, TableCell> Cells { get; set; }
         internal List<Costumstyle> Styles { get; set; }
+        internal List<Costumshape> Shapes { get; set; }
         internal int maxrow { get; set; }
         internal int maxcol { get; set; }
 
-        // Der Konstruktor stellt sicher, dass die Listen niemals 'null' sind
         public Costumworksheet(string name)
         {
             Name = name;
             //Cells = new List<TableCell>();
             Cells = new SortedDictionary<string, TableCell>();
             Styles = new List<Costumstyle>();
+            Shapes = new List<Costumshape>();
             maxrow = 0;
             maxcol = 0;
         }

@@ -1,5 +1,4 @@
-
-using NPOI.SS.UserModel;
+﻿using NPOI.SS.UserModel;
 
 namespace XLS_Export_C_Sharp
 {
@@ -9,6 +8,10 @@ namespace XLS_Export_C_Sharp
         // fillBackColor is FillForegroundColor
         internal short fillBackColor { get; set; }
         internal FillPattern fillpattern { get; set; }
+        //iCellStyle.BorderBottom = cws.borders[0];
+        //iCellStyle.BorderLeft = cws.borders[1];
+        //iCellStyle.BorderRight = cws.borders[2];
+        //iCellStyle.BorderTop = cws.borders[3];
         internal BorderStyle[] borders { get; set; }
         internal HorizontalAlignment alignment { get; set; }
         internal string fontname { get; set; }

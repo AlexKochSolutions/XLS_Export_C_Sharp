@@ -1,3 +1,4 @@
+﻿
 namespace XLS_Export_C_Sharp
 {
     internal class DB_Table_Structure
